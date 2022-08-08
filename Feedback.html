@@ -1,0 +1,196 @@
+<html>
+	<head> 
+		<title>Nedavil Interior</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+		h1 
+		{ 
+			text-shadow : 2px 2px black;
+		}
+		
+		h2 
+		{ 
+			text-shadow : 2px 3px gold;
+		}
+		
+		.image
+		{
+			background : linear-gradient(to left bottom, rgba(41, 172, 109), rgba(165,97,255, 0.8) , rgba(255,221,0,0.8)), url("About_Us_Background.jpg") fixed;
+			background-size : 1370px 660px;
+			background-blend-mode: multiply;
+			background-size : cover;
+			background-repeat : no-repeat;
+		}
+		
+		.text
+		{
+		    margin : 0px 800px 0px 0px;
+			background: rgba(0,0,0,0.7);
+		}
+		
+		img 
+		{
+		    border-radius : 50px;
+			width : 60px;
+			height : 60px;
+			position : absolute;
+			
+		}
+		
+		header 
+		{
+			position : relative;
+			text-align : center;
+			margin : 30px 0px 0px 550px;
+		}
+
+		nav 
+		{
+			position : absolute;
+			background: linear-gradient(to bottom right,rgba(0, 100, 255, 0.9),rgba(190, 84, 255));
+			width : 100%;	
+			height: 55px;
+			border-radius: 50px;
+			
+		}
+
+		nav ul 
+		{
+			padding : 0;
+			margin : 0px 0px 0px 35px;
+			list-style : none;
+		}
+
+		nav li 
+		{
+			margin : 16px 30px 0px 0px;
+			display : inline-block;
+		}
+		
+		nav a 
+		{ 
+			color: rgba(210, 210, 210);
+			text-decoration : none;
+			text-transform : uppercase;
+			transition: background-color 0.5s ease-in-out, border 0.5s ease-in;
+		} 
+
+		nav a:hover 
+		{
+			background-color : rgba(255 , 163, 57);
+			color : white;
+			border: 5px solid transparent;
+			border-bottom-color: white;
+			top: -30px;
+		}
+		
+	
+		.positionButton
+		{
+		background : blue;
+		position : fixed;
+		margin : 600px 0px 0px 1250px;
+		z-index: 1;
+		top : 0;
+		border-radius : 50px;
+		height : 25px;
+		width: 65px;
+		}
+		
+		form
+		{
+		background : linear-gradient(to left bottom, rgba(41, 172, 109), rgba(165,97,255, 0.8) , rgba(255,221,0,0.8));
+		margin : 120px 0px 0px 410px;
+		border-radius : 10px 10px 40px 40px;
+		font-size : 22;
+		width : 40%;
+		height : 72%;
+		position : absolute;
+		}
+		
+		label 
+		{
+		margin : 15px;
+		}
+		
+		input
+		{
+		border-radius : 25px;
+		}
+		
+		textarea
+		{
+		margin : 15px;
+		border-radius : 15px;
+		}
+	
+		</style>
+	</head>
+	<body class = "image"> 
+	<a name = "A1"></a>
+	<header>
+	<nav>
+		<ul>
+		    <li><a href="index.html"><i class="fa fa-home "><span style = "padding : 0.5em ">Home</span></i></a></li>
+			<li><a href="Categories.html"><i class="fa fa-bars "><span style = "padding : 0.5em ">Categories</span></i></a></li>
+			<li><a href="About.html"><i class="fa fa-info-circle"><span style = "padding : 0.5em ">About Us</span></i></a></li>
+			<li><a href="Contact.html"><i class="fa fa-volume-control-phone"><span style = "padding : 0.5em ">Contact</span></i></a></li>
+			<li><a href="Feedback.html"><i class="fa fa-comments-o"><span style = "padding : 0.5em ">Feedback</span></i></a></li>
+		<ul>
+	</nav>
+	</header>
+	<pre style = "font-size : 25; background : linear-gradient(to left, rgba(255,0,0,0.8),rgba(255,169,0,0.8), rgba(255,0,0,0.8)); margin : 180px 0px 0px 100px; position: absolute; width : 20.5% ;height: 110px;border-radius : 60px 0px 60px 0px">
+  
+  <span style = "color : white ; font-family : 'lucida handwriting'">YOUR FEEDBACK</span>
+   <span style = "font-size : 35; color : blue ; font-family: 'times new roman'">"MATTERS"</span>
+	</pre>
+	<form action="mailto:danielaiman512@gmail.com" method="POST">
+	<b>
+	<pre style = "font-family : copperplate; font-size : 30; color : white"> <b style = "text-decoration: underline"> Feedback Form</b></pre>
+    <label for="fullName">Name:</label> 
+    <input type="text" name="fullName">
+	<br><br>
+
+    <label for="gender">Gender:</label> 
+    <input type="radio" name="gender" value="male">Male
+    <input type="radio" name="gender" value="female">Female
+	<br><br>
+
+    <label for="rating">Rating:</label>
+	<input type="radio" name="rating" value="1">1
+    <input type="radio" name="rating" value="2">2
+	<input type="radio" name="rating" value="3">3
+	<input type="radio" name="rating" value="4">4
+	<input type="radio" name="rating" value="5">5
+	<br><br>
+    <label for="email">E-mail:</label> 
+    <input type="text" name="email">
+	<br><br>
+
+    <label for="comments">Your thoughts on what is needed to be improved</label> 
+    <textarea name="comments"></textarea>
+	<br><br>
+
+    <input type="submit" value="Submit" style = "margin : 0px 0px 0px 20px">
+	<br>
+    <input type="reset" value="Clear" style = "margin : 0px 0px 0px 20px">
+	</b>
+	</span>
+    </form>
+	<p style = "padding-bottom: 530px"></p>
+	<p style = "height : 260px ; width : 1345px ; background : gray; margin : 100px 0px -75px -10px">
+		<pre style = "margin : -240px 0px -100px -100px">
+		<span style = "font-size : 30 ; font-family : papyrus ;color :lightblue">Nedavil Interior</span>
+		<span style = "font-size : 15">
+		Nedavil Interior was created for the purpose of 
+		helping people to construct a dining space that
+		would meet their preferences in the most 
+		affordable price, and giving the most
+		optimum output from my website.
+		
+		@2022 - 2022 (Nedavil Interior.com)
+		</span>
+		</pre>
+		</p>
+	</body>
+</html>
